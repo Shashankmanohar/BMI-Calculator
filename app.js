@@ -3,7 +3,7 @@ let calculatebtn = document.querySelector(".Calculatebtn");
 calculatebtn.addEventListener('click',calculate);
 
 function calculate(){
-    let Weight = document.getElementById("weight").value;  //get the value of weight from
+    let Weight = document.getElementById("weight").value;  
     let Height = document.getElementById("height").value;
     if(Weight.value == "" || Height.value == ""){
         alert("Please fill out all fields!");
@@ -22,7 +22,6 @@ function calculate(){
     document.getElementsByClassName( 'result' )[0].textContent= result;
     document.getElementById("weight").value ="";
     document.getElementById("height").value ="";
-    //clear input field after calculation
     };
     
 }
